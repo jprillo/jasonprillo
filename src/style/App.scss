@@ -102,7 +102,7 @@ justify-content: space-between;
   }
 
 .logo-wrap a{
-  color: white;
+  color: lightskyblue;
   font-size: 20px;
   font-family: black-font;
   @include breakpoint(md){
@@ -133,7 +133,7 @@ margin-left: 25px;
   display: flex;
   flex-direction: column;
   height: 100vh;  
-  background: black-color;
+  background: yellowgreen;
   z-index: 1000;
   text-align: center;
   @include breakpoint(md){

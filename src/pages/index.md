@@ -5,7 +5,7 @@ image: /img/home-jumbotron.jpg
 heading: Garden Butterfly Project
 subheading: Test of the Netlify CMS changes
 mainpitch:
-  title: Why Kaldi
+  title: BUtterfly Garden
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. 
