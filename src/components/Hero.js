@@ -22,12 +22,12 @@ const Hero = (
     <p>{props.host}</p>
     </div>
     <div style={{border: "solid 2px green",width:"110px", height: "130px", margin: "1em"}}>
-    <h4>Host</h4>
-    <p>{props.host}</p>
+    <h4>Life Span</h4>
+    <p>{props.lifespan}</p>
 </div>
 <div style={{border: "solid 2px green",width:"110px", height: "130px", margin: "1em"}}>
-<h4>Host</h4>
-    <p>{props.host}</p>
+<h4>Latin Name</h4>
+    <p>{props.latinname}</p>
 </div>
 </div>
     <Container className="heroContainer" >

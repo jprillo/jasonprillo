@@ -12,7 +12,7 @@ const FlexContainer = (
     <Container >
         <Row  className=".row" style={{margin: "50px 0"}} >
         <Col style={{textAlign: "center"}} >
-       <img src={props.image} alt="hi"></img>
+       <img width="100%" src={props.image} alt="hi"></img>
             </Col>
             <Col className="container-md">
             <h3 style={{textAlign:"left"}}>{props.cycle}<br/> </h3> 
