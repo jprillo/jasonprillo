@@ -1,5 +1,60 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./breakpoints";
+
+.heroContainer{
+  margin-top: 10vh;
+ 
+
+}
+.life{
+  color: white;
+  padding: 0 5% 50px;
+  
+}
+  
+.row{
+  flex-direction: column;
+  @include breakpoint(md){
+    flex-direction: row;
+}
+}
+$background:  rgb(32, 6, 48); 
+.jumbotron{
+  background: teal;
+  height: auto;
+  margin: 0;
+
+ 
+  h1{
+    font-size: 30px;
+  background: linear-gradient(90deg, #00FF75 -31.43%, #00FFFF 131.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    @include breakpoint(md){
+      font-size: 60px;
+  }
+  
+  }
+  p{
+    color: white;
+    font-size: 18px;
+    @include breakpoint(md){
+      font-size: 22px
+    }
+  }
+}
+/* The animation code */
+@keyframes line {
+  from {width: 1%;}
+  to {width: 90%;}
+}
+
+
+.title-line{
+  width: 90%;
+  animation-name: line;
+  animation-duration: .5s;
+}
 .App {
   text-align: center;
 }

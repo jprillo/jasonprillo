@@ -7,7 +7,7 @@ const NavBar = () => {
     const [isActive, toggleNavbar] = useState(false);
     const setActive = () => { toggleNavbar(true); }
     return (
-        <div className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
+        <div style={{position: "absolute"}} className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
             <div id="main-nav-wrap">
                 <div className="logo-wrap">
                     <a href="/">
