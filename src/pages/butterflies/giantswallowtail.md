@@ -3,11 +3,8 @@ heading: Giant Swallowtail
 path: butterflies/giantswallowtail
 templateKey: butterfly-page
 title: Giant Swallowtail
-image: /img/jumbotron.jpg
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+image: /img/giant.jpg
+description: The giant swallow tail is my favorite butterfly.
 range:
   description: this is the range
   image:
@@ -40,6 +37,6 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 host: Citrus
-lifespan: 2-3 weeks
-latinname: fuckyeah
+lifespan: 6 -14 days
+latinname: Papilio cresphontes
 ---
