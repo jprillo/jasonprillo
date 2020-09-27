@@ -4,11 +4,9 @@ path: butterflies/monarch
 templateKey: butterfly-page
 title: Monarch
 image: /img/monarch3.png
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
-
+description: The Monarch Butterfly is maybe the most familar and iconic to most
+  Americans. It is orange and black with a wing span of 2 inchs. They are foung
+  near milkweed patches because that is the only thing it's caterpilars can eat
 range:
   description: this is the range
   image:
@@ -32,14 +30,13 @@ main:
   description3: |
     We hold our coffee 
   image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+    alt: Monarch Butterfly Caterpillar
+    image: /img/monarch-cat.jpg
   description4: |
     We hold our coffee to the 
   image4:
     alt: Coffee beans
-    image: /img/products-grid1.jpg
-
+    image: /img/monarchs-mating.jpg
 host: Milkweed
 lifespan: 2-3 weeks
 latinname: Danaus plexippus
