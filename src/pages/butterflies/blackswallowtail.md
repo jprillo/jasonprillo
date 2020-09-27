@@ -1,17 +1,13 @@
 ---
-templateKey: 'butterfly-page'
+heading: Black Swallowtail
 path: butterflies/monarch
+templateKey: butterfly-page
 title: Black Swallowtail
 image: /img/blackswallowtail.png
-heading: Black Swallowtail
-host: Parsley
-lifespan: 2-3 weeks
-latinname: fuckyeah
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 range:
   description: this is the range
   image:
@@ -24,23 +20,25 @@ main:
     That’s why we’re meticulous and transparent about each step of the coffee’s
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
-  description2: >
-    We hold 
-  description3: >
-    We hold our coffee 
-  description4: >
-    We hold our coffee to the 
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg
+  description2: |
+    We hold 
   image2:
     alt: A green cup of a coffee on a wooden table
     image: /img/products-grid2.jpg
+  description3: |
+    We hold our coffee 
   image3:
     alt: Coffee beans
-    image: /img/products-grid1.jpg
+    image: /img/black-cat.jpg
+  description4: |
+    We hold our coffee to the 
   image4:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-
+host: Parsley
+lifespan: 2-3 weeks
+latinname: Papilio polyxenes
 ---
