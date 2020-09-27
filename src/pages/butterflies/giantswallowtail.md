@@ -8,7 +8,6 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
-
 range:
   description: this is the range
   image:
@@ -40,7 +39,6 @@ main:
   image4:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-
 host: Citrus
 lifespan: 2-3 weeks
 latinname: fuckyeah
