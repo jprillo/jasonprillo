@@ -3,14 +3,6 @@ import PropTypes from 'prop-types'
 import { ButterflyPageTemplate } from '../../templates/butterfly-page'
 
 const ButterflyPagePreview = ({ entry, getAsset }) => {
-  const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
-  const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
-
-  const entryTestimonials = entry.getIn(['data', 'testimonials'])
-  const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
-
-  const entryPricingPlans = entry.getIn(['data', 'pricing', 'plans'])
-  const pricingPlans = entryPricingPlans ? entryPricingPlans.toJS() : []
 
   return (
     <ButterflyPageTemplate
@@ -18,7 +10,7 @@ const ButterflyPagePreview = ({ entry, getAsset }) => {
       title={entry.getIn(['data', 'title'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
-      intro={{ blurbs }}
+      
       range={{
         description: entry.getIn(['data', 'range', 'description']),
         image: {
@@ -49,13 +41,7 @@ const ButterflyPagePreview = ({ entry, getAsset }) => {
             alt: entry.getIn(['data', 'main', 'image4', 'alt']),
           },
       }}
-      fullImage={entry.getIn(['data', 'full_image'])}
-      testimonials={testimonials}
-      pricing={{
-        heading: entry.getIn(['data', 'pricing', 'heading']),
-        description: entry.getIn(['data', 'pricing', 'description']),
-        plans: pricingPlans,
-      }}
+     
       host={entry.getIn(['data', 'host'])}
       lifespan={entry.getIn(['data', ' lifespan'])}
       latinname={entry.getIn(['data', 'latinname'])}

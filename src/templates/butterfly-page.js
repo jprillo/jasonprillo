@@ -12,13 +12,9 @@ export const ButterflyPageTemplate = ({
   image,
   title,
   heading,
-  description,
-  intro,
+  description,  
   range,
-  main,
-  testimonials,
-  fullImage,
-  pricing,
+  main,  
   host,
   lifespan,
   latinname,
@@ -51,10 +47,6 @@ ButterflyPageTemplate.propTypes = {
   host: PropTypes.string,
   lifespan: PropTypes.string,
   latinname: PropTypes.string,
-
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
   range: PropTypes.shape({
     description: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -70,13 +62,7 @@ ButterflyPageTemplate.propTypes = {
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image4: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
-  testimonials: PropTypes.array,
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
+ 
 }
 
 const ButterflyPage = ({ data }) => {
@@ -89,12 +75,8 @@ const ButterflyPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
-        intro={frontmatter.intro}
         main={frontmatter.main}
-        range={frontmatter.range}
-        testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
+        range={frontmatter.range}        
         host={frontmatter.host}
         lifespan={frontmatter.lifespan}
         latinname={frontmatter.latinname}
@@ -130,20 +112,6 @@ export const ButterflyPageQuery = graphql`
         host
         lifespan
         latinname        
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
         range {
           description
           image {
@@ -204,27 +172,7 @@ export const ButterflyPageQuery = graphql`
             }
           }
         }
-        testimonials {
-          author
-          quote
-        }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
-          }
-        }
+        
       }
     }
   }
