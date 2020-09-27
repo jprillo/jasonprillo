@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: Garden Butterfly Project
-image: /img/home-jumbotron.jpg
+title: Botanical Backyard
+image: /img/coolmoth.png
 heading: Garden Butterfly Project
-subheading: Test of the Netlify CMS changes
+subheading: Learn how to turn yard garden into a paradise.
 mainpitch:
-  title: BUtterfly Garden
+  title: Butterfly Garden
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. 
