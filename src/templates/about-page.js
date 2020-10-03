@@ -3,17 +3,17 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import HeroTwo from '../components/HeroTwo'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className="section section--gradient">
+      <HeroTwo title={title} description="This is why we made this website"/>
       <div className="container">
       
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
+      
               <PageContent className="content" content={content} />
       
       </div>

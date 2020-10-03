@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import HeroTwo from '../components/HeroTwo'
 
 class TagRoute extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class TagRoute extends React.Component {
       <Layout>
         <section className="section">
           <Helmet title={`${tag} | ${title}`} />
+          <HeroTwo title={tag} description=""/>
           <div className="container content">
             <div className="columns">
               <div
