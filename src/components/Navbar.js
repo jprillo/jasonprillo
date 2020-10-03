@@ -4,8 +4,8 @@ import {Link} from "gatsby"
 
 const NavBar = () => {
 
-    const [isActive, toggleNavbar] = useState(false);
-    const setActive = () => { toggleNavbar(true); }
+    const [isActive, toggleNavbar] = useState();
+   
     return (
         <div style={{position: "absolute"}} className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
             <div id="main-nav-wrap">
@@ -20,7 +20,7 @@ const NavBar = () => {
                             <li><Link className="hack" to="/">Home</Link></li>
                             <li><Link to="/about/" className="hack">About</Link></li>
                             <li><Link to="/blog/" className="hack">Blog</Link></li>
-                            <li><Link to="/products/" className="hack">Products</Link></li>
+                            <li><Link to="/butterflies/" className="hack">Butterflies</Link></li>
                             <li><Link to="/contact/" className="hack">Contact</Link></li>
 
 
@@ -36,7 +36,7 @@ const NavBar = () => {
                     <div className={` burger-open ${isActive ? 'burger-close' : ''}`}
 
                         data-target='nav-menu'
-                        onClick={setActive}
+                        onClick={toggleNavbar}
                         aria-hidden={true}>
                         <span className="line line01"></span>
                         <span className="line line02"></span>

@@ -104,7 +104,7 @@ top: 50px;
       position: absolute;
       height: 10%;
       width:70%;
-      background:black-color;
+      background:hotpink;
       box-shadow: .5px .5px black;
       border-radius:10px;
       transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
@@ -149,7 +149,7 @@ color: blue-color;
 display: flex;
 justify-content: space-between;
   padding:  .5em .5em .25em;
-  background-color: var(--bg);     
+  background-color: inherit;     
   align-items: center; 
   transition: background .5s; 
   
@@ -190,7 +190,7 @@ margin-left: 25px;
   display: flex;
   flex-direction: column;
   height: 100vh;  
-  background: yellowgreen;
+  background: rgb(0, 255, 0);
   z-index: 1000;
   text-align: center;
   @include breakpoint(md){

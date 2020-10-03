@@ -2,8 +2,8 @@
 templateKey: index-page
 title: Botanical Backyard
 image: /img/coolmoth.png
-heading: Garden Butterfly Project
-subheading: Learn how to turn yard garden into a paradise.
+heading: Botanical Backyard
+subheading: Turn your garden into a paradise.
 mainpitch:
   title: Butterfly Garden
   description: >

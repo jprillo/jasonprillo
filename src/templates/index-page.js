@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import HeroTwo from '../components/HeroTwo'
 
 export const IndexPageTemplate = ({
   image,
@@ -16,16 +17,8 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div>
-     <h1>
-          {title}
-        </h1>
-        <h3
-        
-        >
-          {subheading}
-        </h3>
-      </div>
+
+      <HeroTwo description={subheading}  image={image.childImageSharp.fluid.src} alt="hi" title={title}></HeroTwo>
     
     <section className="section section--gradient">
       <div className="container">

@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
+
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import FlexContainer from '../components/FlexContainer'
@@ -18,9 +20,11 @@ export const ButterflyPageTemplate = ({
   host,
   lifespan,
   latinname,
+  helmet
 }) => (
   <div >
-    <Hero latinname={latinname} lifespan={lifespan} image={image.childImageSharp.fluid.src} host={host} alt="hi" title={title}></Hero>
+      {helmet || ''}
+    <Hero description={description} latinname={latinname} lifespan={lifespan} image={image.childImageSharp.fluid.src} host={host} alt="hi" title={title}></Hero>
 <div className="life" style={{background: "#361D2F"}}>
 <h2>Life Cycle</h2>
 
@@ -40,6 +44,7 @@ export const ButterflyPageTemplate = ({
 )
 
 ButterflyPageTemplate.propTypes = {
+  helmet: PropTypes.object,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -61,6 +66,7 @@ ButterflyPageTemplate.propTypes = {
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image4: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    
   }),
  
 }
@@ -80,6 +86,15 @@ const ButterflyPage = ({ data }) => {
         host={frontmatter.host}
         lifespan={frontmatter.lifespan}
         latinname={frontmatter.latinname}
+        helmet={
+          <Helmet titleTemplate="%s | Blog">
+            <title>{`${frontmatter.title}`}</title>
+            <meta
+              name="description"
+              content={`${frontmatter.description}`}
+            />
+          </Helmet>
+        }
       />
     </Layout>
   )

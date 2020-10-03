@@ -1,9 +1,13 @@
 import React from 'react';
+import HeroTwo from '../../components/HeroTwo'
+import Layout from '../../components/Layout'
+
 
 const Butterfly = () => {
     return ( 
-<p>hello there</p>
-
+        <Layout>
+<HeroTwo title="Butterflies" description="These are the butterflies that we have studied and raised."/>
+</Layout>
      );
 }
  

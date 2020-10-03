@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
+import HeroTwo from '../../components/HeroTwo'
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -13,9 +14,7 @@ export default class BlogIndexPage extends React.Component {
             backgroundImage: `url('/img/blog-index.jpg')`,
           }}
         >
-          <h1 >
-            Latest Stories
-          </h1>
+      <HeroTwo title="Blog" description="All things Florida Gardening"/>
         </div>
         <section className="section">
           <div className="container">

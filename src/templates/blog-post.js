@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
+import HeroTwo from '../components/HeroTwo'
 import Content, { HTMLContent } from '../components/Content'
 
 export const BlogPostTemplate = ({
@@ -19,6 +20,7 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ''}
+      <HeroTwo title={title} description={description}/>
       <div className="container content">
       
             <h1 className="">

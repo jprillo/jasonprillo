@@ -42,8 +42,7 @@ const Hero = (
         
         <div className="title-line" style={{borderTop: "solid 2px white", margin: "40px 10px"}}></div>
          <p style={{padding: "0 2em"}}>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
+    {props.description}
   </p>
 
             </Col>
