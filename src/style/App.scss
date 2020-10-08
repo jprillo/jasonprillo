@@ -150,7 +150,7 @@ display: flex;
 justify-content: space-between;
   padding:  .5em .5em .25em;
   background-color: inherit;     
-  align-items: center; 
+ 
   transition: background .5s; 
   
   @include breakpoint(md){
@@ -202,6 +202,30 @@ margin-left: 25px;
       background: inherit;
       margin: .75em;
   }
+}
+.responsive-nav.mobile-nav p{
+  font-weight: bold;
+  font-family: black-font;
+  margin-bottom: 0;
+  color: white;
+  font-size: 35px;
+  @include breakpoint(md){       
+    font-weight: 300;     
+    font-size: 20px;       
+    
+}
+}
+.dropdown{
+  font-weight: bold;
+  font-family: black-font;
+  margin-bottom: 0;
+  color: white;
+  font-size: 25px;
+  @include breakpoint(md){       
+ 
+    font-size: 20px;       
+    
+}
 }
 .responsive-nav.mobile-nav .nav a{
 
@@ -291,7 +315,13 @@ margin-left: 25px;
 .hack{
   color: white;
 }
+.hide{
+  display: none;
+}
+ul{
+  list-style: none;
 
+}
 
 
 

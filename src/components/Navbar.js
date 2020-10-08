@@ -5,7 +5,10 @@ import {Link} from "gatsby"
 const NavBar = () => {
 
     const [isActive, toggleNavbar] = useState(false);
+    const [isDropped, dropDown ] = useState(false);
+    
     const toggleTrueFalse = () => toggleNavbar(!isActive);
+    const dropTrueFalse = () => dropDown(!isDropped);
    
     return (
         <div style={{position: "absolute"}} className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
@@ -21,7 +24,14 @@ const NavBar = () => {
                             <li><Link className="hack" to="/">Home</Link></li>
                             <li><Link to="/about/" className="hack">About</Link></li>
                             <li><Link to="/blog/" className="hack">Blog</Link></li>
-                            <li><Link to="/butterflies/" className="hack">Butterflies</Link></li>
+                            <li onClick={dropTrueFalse}><p  className="hack">Butterflies</p>
+                                <ul className= {`dropdown ${isDropped ? '' : 'hide'}`} style={{paddingInlineStart: "0px"}} >
+                                    <li><Link to="/butterflies/monarch/" className="hack">Monarch</Link></li>
+                                    <li><Link to="/butterflies/blackswallowtail/" className="hack">Giant Swallowtail</Link></li>
+                                    <li><Link to="/butterflies/giantswallowtail/" className="hack">Black Swallowtail</Link></li>
+                                </ul>
+                            
+                            </li>
                             <li><Link to="/contact/" className="hack">Contact</Link></li>
                         </ul>
                     </div>
