@@ -376,7 +376,22 @@ font-size: 20px;
 
 }
 
+.box-container{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: auto;
+  top: auto;
+    @include breakpoint(md){
+flex-direction: column;
+position: absolute;
+right: 2px;
+top: 10vh;
 
+    }
+
+
+}
 
 
 

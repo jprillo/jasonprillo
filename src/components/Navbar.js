@@ -28,8 +28,8 @@ const NavBar = () => {
                             <li onClick={dropTrueFalse}><span  className="hack drop">Butterflies<i className= {`arrow ${isDropped ? 'down' : ''}`}></i></span>
                                 <ul className= {`dropdown ${isDropped ? '' : 'hide'}`} style={{paddingInlineStart: "0px"}} >
                                     <li><Link  to="/butterflies/monarch/" className="hack drop-link">Monarch</Link></li>
-                                    <li><Link to="/butterflies/blackswallowtail/" className="hack drop-link">Giant Swallowtail</Link></li>
-                                    <li><Link to="/butterflies/giantswallowtail/" className="hack drop-link">BlackSwallowtail</Link></li>
+                                    <li><Link to="/butterflies/giantswallowtail/" className="hack drop-link">Giant Swallowtail</Link></li>
+                                    <li><Link to="/butterflies/blackswallowtail/" className="hack drop-link">BlackSwallowtail</Link></li>
                                 </ul>
                             
                             </li>

@@ -87,8 +87,12 @@ const ButterflyPage = ({ data }) => {
         lifespan={frontmatter.lifespan}
         latinname={frontmatter.latinname}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Butterfly">
             <title>{`${frontmatter.title}`}</title>
+            <meta 
+              property="og:title"
+              content={`${frontmatter.title}`}
+            />
             <meta
               name="description"
               content={`${frontmatter.description}`}
