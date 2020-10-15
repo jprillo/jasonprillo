@@ -1,3 +1,4 @@
+
 @import "~bootstrap/scss/bootstrap";
 @import "./breakpoints";
 h2{
@@ -220,9 +221,10 @@ margin-left: 25px;
   font-family: black-font;
   margin-bottom: 0;
   color: white;
+  background: hotpink;
   font-size: 25px;
   @include breakpoint(md){       
- 
+    text-align: left;
     font-size: 20px;       
     
 }
@@ -240,7 +242,7 @@ margin-left: 25px;
       font-size: 20px;       
       margin: .5em;
       padding: .5em;
-      color: darkslategrey;
+      color: white;
   }
   &:hover {
     color: yellow;
@@ -270,11 +272,49 @@ margin-left: 25px;
   }
 
 }
+.arrow{
+  
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-left: 5px;
+  transform: rotate(-45deg);
+
+
+}
+.down{
+  transform: rotate(45deg);
+}
+.drop{
+    font-family: black-font;
+  font-weight: bold;
+  color: white;
+  font-size: 35px;
+  line-height: 120%;
+  margin:  40px 0; 
+  @include breakpoint(md){
+    font-family: black-font;
+    font-weight: 300;    
+    font-size: 20px;   
+
+      line-height: 120%;
+      margin: .5em;
+      padding: .5em;
+}
+&:hover {
+  color: red-color;
+ 
+}
+&:active {
+  color: blue-color;
+}
+
+}
 .nav a{
   @include breakpoint(md){
       font-family: black-font;
-      font-weight: 300;
-      
+      font-weight: 300;      
       font-size: 20px;
       line-height: 120%;
       margin: .5em;
@@ -320,6 +360,19 @@ margin-left: 25px;
 }
 ul{
   list-style: none;
+
+}
+
+.dropdown a{
+  font-size: 15px;
+}
+.responsive-nav.mobile-nav .dropdown a {
+font-size: 20px;
+  @include breakpoint(md){
+ font-size: 15px;
+ text-align: left;
+
+  }
 
 }
 

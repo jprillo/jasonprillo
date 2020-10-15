@@ -11,7 +11,7 @@ const NavBar = () => {
     const dropTrueFalse = () => dropDown(!isDropped);
    
     return (
-        <div style={{position: "absolute"}} className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
+        <div style={{position: "absolute", zIndex: "1000"}} className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
             <div id="main-nav-wrap">
                 <div className="logo-wrap">
                     <a href="/">
@@ -24,11 +24,12 @@ const NavBar = () => {
                             <li><Link className="hack" to="/">Home</Link></li>
                             <li><Link to="/about/" className="hack">About</Link></li>
                             <li><Link to="/blog/" className="hack">Blog</Link></li>
-                            <li onClick={dropTrueFalse}><p  className="hack">Butterflies</p>
+                          
+                            <li onClick={dropTrueFalse}><span  className="hack drop">Butterflies<i className= {`arrow ${isDropped ? 'down' : ''}`}></i></span>
                                 <ul className= {`dropdown ${isDropped ? '' : 'hide'}`} style={{paddingInlineStart: "0px"}} >
-                                    <li><Link to="/butterflies/monarch/" className="hack">Monarch</Link></li>
-                                    <li><Link to="/butterflies/blackswallowtail/" className="hack">Giant Swallowtail</Link></li>
-                                    <li><Link to="/butterflies/giantswallowtail/" className="hack">Black Swallowtail</Link></li>
+                                    <li><Link  to="/butterflies/monarch/" className="hack drop-link">Monarch</Link></li>
+                                    <li><Link to="/butterflies/blackswallowtail/" className="hack drop-link">Giant Swallowtail</Link></li>
+                                    <li><Link to="/butterflies/giantswallowtail/" className="hack drop-link">BlackSwallowtail</Link></li>
                                 </ul>
                             
                             </li>
@@ -44,6 +45,7 @@ const NavBar = () => {
                     <div className={` burger-open ${isActive ? 'burger-close' : ''}`}
 
                         data-target='nav-menu'
+                        
                         onClick={toggleTrueFalse}
                         aria-hidden={true}>
                         <span className="line line01"></span>
