@@ -31,31 +31,31 @@ export const ButterflyPageTemplate = ({
 <h2>Life Cycle</h2>
 <Container style={{textAlign: "center"}}>
   <Row>
-    <Col>
-      <img width="80%" src={main.image1.image.childImageSharp.fluid.src } alt="Host" />
+    <Col className="cycle-card">
+      <h4 style={{textAlign: "left"}}>Host Plant</h4>
+      <img width="100%" src={main.image1.image.childImageSharp.fluid.src } alt="Host" />
       <p>{main.description1}</p>
     </Col>
-       <Col>
-      <img width="80%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
+       <Col className="cycle-card">
+       <h4 style={{textAlign: "left"}}>Egg</h4>
+      <img width="100%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
       <p>{main.description2}</p>
     </Col>
   </Row>
     <Row>
-       <Col>
-      <img width="80%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
+       <Col className="cycle-card">
+       <h4 style={{textAlign: "left"}}>Caterpillar</h4>
+      <img width="100%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
       <p>{main.description2}</p>
     </Col>
-        <Col>
-      <img width="80%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
+        <Col className="cycle-card">
+        <h4 style={{textAlign: "left"}}>Butterfly</h4>
+      <img width="100%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
       <p>{main.description2}</p>
     </Col>
   </Row>
 
 </Container>
-<FlexContainer description={main.description1} cycle="Host Plant" image={main.image1.image.childImageSharp.fluid.src } alt="mo"></FlexContainer>
-<FlexContainer description={main.description2} cycle="Egg" image={main.image2.image.childImageSharp.fluid.src } alt="mo"></FlexContainer>
-<FlexContainer description={main.description3} cycle="Caterpiller" image={main.image3.image.childImageSharp.fluid.src } alt="mo"></FlexContainer>
-<FlexContainer description={main.description4} cycle="Butterfly" image={main.image4.image.childImageSharp.fluid.src } alt="mo" ></FlexContainer>
 
 </div>
 <div style={{background: "#200630", color: "white"}}>

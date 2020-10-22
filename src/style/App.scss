@@ -400,14 +400,19 @@ font-size: 20px;
   flex-direction: row;  
  
 .box{
-  padding: .5em;
+  padding: .15em;
   display: flex;
    flex-direction: column; 
    justify-content: space-between;
     border: solid 2px green; 
-    width:130px;
+    width:110px;     
+     margin:.15em;
+     @include breakpoint(md){
+      padding: .5em;
+      width:130px;
+      margin: .5em
+     }
      
-     margin:.5em;
      h4{
        font-size: 20px;
        color: white;
@@ -436,4 +441,23 @@ width: 100%;
 }
  .is-featured{
  width: 100%; 
+}
+
+
+
+.cycle-card{
+  
+  padding: 2em;
+  @include breakpoint(md){
+  margin: 50px 2em 0;
+ 
+  }
+  img{
+    padding: 2em 0;
+  }
+}
+
+
+.container{
+  padding: 0;
 }

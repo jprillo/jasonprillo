@@ -25,7 +25,7 @@ const NavBar = () => {
                             <li><Link to="/about/" className="hack">About</Link></li>
                             <li><Link to="/blog/" className="hack">Blog</Link></li>
                           
-                            <li onClick={dropTrueFalse}><span  className="hack drop">Butterflies<i className= {`arrow ${isDropped ? 'down' : ''}`}></i></span>
+                            <li  onClick={dropTrueFalse}><span style={{cursor: "pointer"}} className="hack drop">Butterflies<i className= {`arrow ${isDropped ? 'down' : ''}`}></i></span>
                                 <ul className= {`dropdown ${isDropped ? '' : 'hide'}`} style={{paddingInlineStart: "0px"}} >
                                     <li><Link  to="/butterflies/monarch/" className="hack drop-link">Monarch</Link></li>
                                     <li><Link to="/butterflies/giantswallowtail/" className="hack drop-link">Giant Swallowtail</Link></li>
