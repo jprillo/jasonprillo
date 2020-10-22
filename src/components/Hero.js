@@ -18,17 +18,32 @@ const Hero = (
     <Container className="heroContainer" >
         <Row className=" position-relative hero row">
         <Col >
-            <img width="100%" src={props.image} alt="hello" />
+            <img className="butterfly-image" width="105%" src={props.image} alt={props.title} />
 
             
             </Col>
             <Col >
-            <h1 style={{marginLeft: "50px"}}>{props.title}<br/></h1> 
+            <h1 >{props.title}<br/></h1> 
         
-        <div className="title-line" style={{borderTop: "solid 2px white", margin: "40px 10px"}}></div>
-         <p style={{padding: "0 2em"}}>
+        <div className="title-line" style={{borderTop: "solid 2px white", margin: "40px 50px"}}></div>
+         <p style={{padding: "0 2em", margin: "50px 0 50px 50px "}}>
     {props.description}
   </p>
+  <div className="box-container text-center">
+
+    <div className="box" >
+        <h4>Host Plant</h4>
+    <p>{props.host}</p>
+    </div>
+    <div className="box">
+    <h4>Life Span</h4>
+    <p>{props.lifespan}</p>
+</div>
+<div className="box">
+<h4>Scientific Name</h4>
+    <p>{props.latinname}</p>
+</div>
+</div>
 
             </Col>
 
@@ -39,21 +54,7 @@ const Hero = (
  
   </Container>
 
-<div className="box-container text-center">
 
-    <div style={{border: "solid 2px green",width:"110px", height: "130px", margin: "1em"}}>
-        <h4>Host</h4>
-    <p>{props.host}</p>
-    </div>
-    <div style={{border: "solid 2px green",width:"110px", height: "130px", margin: "1em"}}>
-    <h4>Life Span</h4>
-    <p>{props.lifespan}</p>
-</div>
-<div style={{border: "solid 2px green",width:"110px", height: "130px", margin: "1em"}}>
-<h4>Latin Name</h4>
-    <p>{props.latinname}</p>
-</div>
-</div>
 </Jumbotron>
 
     );

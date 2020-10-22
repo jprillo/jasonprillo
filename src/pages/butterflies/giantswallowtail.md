@@ -4,7 +4,7 @@ path: butterflies/giantswallowtail
 templateKey: butterfly-page
 title: Giant Swallowtail
 image: /img/giant.jpg
-description: The giant swallow tail is my favorite butterfly.
+description:  Hated by citrus farmers this beautiful butterflies caterpiller's main food source is citrus. I however am not a citrus farmer and love the huge yellow butterfly despite living half of it's like looking like bird shit. 
 range:
   description: this is the range
   image:
@@ -36,7 +36,7 @@ main:
   image4:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-host: Citrus
+host: Citrus Family
 lifespan: 6 -14 days
 latinname: Papilio cresphontes
 ---

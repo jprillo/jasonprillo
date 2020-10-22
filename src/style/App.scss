@@ -9,10 +9,24 @@ h2{
  
 
 }
+.butterfly-image{
+  max-width: 500px;
+    @include breakpoint(md){
+    margin-top: 80px;
+    max-width: 1000px;
+}
+  
+}
 .life{
   color: white;
-  padding: 0 5% 50px;
-  
+  padding: 50px 5% 50px;
+  h2{
+    font-size: 40px;
+    padding: 20px;
+  }
+  p{
+    text-align: left;
+  }
 }
   
 .row{
@@ -29,12 +43,17 @@ $background:  rgb(32, 6, 48);
 
  
   h1{
-    font-size: 30px;
+    margin: .5em 60px;
+    font-size: 45px;
+    text-align: center;
   background: linear-gradient(90deg, #00FF75 -31.43%, #00FFFF 131.9%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     @include breakpoint(md){
       font-size: 60px;
+      text-align: left;
+      margin: .5em 60px
+   
   }
   
   }
@@ -42,7 +61,7 @@ $background:  rgb(32, 6, 48);
     color: white;
     font-size: 18px;
     @include breakpoint(md){
-      font-size: 22px
+      font-size: 20px
     }
   }
 }
@@ -378,20 +397,43 @@ font-size: 20px;
 
 .box-container{
   display: flex;
-  flex-direction: row;
-  position: relative;
-  right: auto;
-  top: auto;
-    @include breakpoint(md){
-flex-direction: column;
-position: absolute;
-right: 2px;
-top: 10vh;
-
-    }
+  flex-direction: row;  
+ 
+.box{
+  padding: .5em;
+  display: flex;
+   flex-direction: column; 
+   justify-content: space-between;
+    border: solid 2px green; 
+    width:130px;
+     
+     margin:.5em;
+     h4{
+       font-size: 20px;
+       color: white;
+     }
+     p{
+       font-size: 18px;
+       color: #01ff96;
+     }
+}
 
 
 }
 
 
+.blog-roll{
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog-article-roll{
+width: 100%;
+  @include breakpoint(md){
+  width: 45%;
+  margin:20px;
+  }
 
+}
+ .is-featured{
+ width: 100%; 
+}

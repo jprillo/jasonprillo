@@ -6,7 +6,9 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import FlexContainer from '../components/FlexContainer'
-
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 
@@ -27,7 +29,29 @@ export const ButterflyPageTemplate = ({
     <Hero description={description} latinname={latinname} lifespan={lifespan} image={image.childImageSharp.fluid.src} host={host} alt="hi" title={title}></Hero>
 <div className="life" style={{background: "#361D2F"}}>
 <h2>Life Cycle</h2>
+<Container style={{textAlign: "center"}}>
+  <Row>
+    <Col>
+      <img width="80%" src={main.image1.image.childImageSharp.fluid.src } alt="Host" />
+      <p>{main.description1}</p>
+    </Col>
+       <Col>
+      <img width="80%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
+      <p>{main.description2}</p>
+    </Col>
+  </Row>
+    <Row>
+       <Col>
+      <img width="80%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
+      <p>{main.description2}</p>
+    </Col>
+        <Col>
+      <img width="80%" src={main.image2.image.childImageSharp.fluid.src } alt="Host" />
+      <p>{main.description2}</p>
+    </Col>
+  </Row>
 
+</Container>
 <FlexContainer description={main.description1} cycle="Host Plant" image={main.image1.image.childImageSharp.fluid.src } alt="mo"></FlexContainer>
 <FlexContainer description={main.description2} cycle="Egg" image={main.image2.image.childImageSharp.fluid.src } alt="mo"></FlexContainer>
 <FlexContainer description={main.description3} cycle="Caterpiller" image={main.image3.image.childImageSharp.fluid.src } alt="mo"></FlexContainer>

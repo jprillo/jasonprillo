@@ -17,7 +17,7 @@ const HeroTwo = (
     <Container className="heroContainer" >
         <Row className=" position-relative hero row text-center">  
             <Col >
-            <h1 >{props.title}<br/></h1> 
+            <h1 className="text-center" >{props.title}<br/></h1> 
         
        
          <p style={{padding: "0 2em"}}>

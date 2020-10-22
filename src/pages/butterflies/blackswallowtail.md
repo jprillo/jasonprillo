@@ -38,7 +38,7 @@ main:
   image4:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-host: Parsley
+host: Parsley, Carrott, Rue, Hogweed
 lifespan: 2-3 weeks
 latinname: Papilio polyxenes
 ---
