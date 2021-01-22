@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Botanical Backyard
-image: /img/coolmoth.png
-heading: Botanical Backyard
-subheading: Turn your garden into a paradise.
+title: Hello There
+image: /img/paintpour.jpg
+heading: Hello There
+subheading: My name is Jason. I am a web developer from Palm Bay, Florida.
 mainpitch:
   title: Butterfly Garden
   description: >

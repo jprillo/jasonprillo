@@ -1,39 +1,45 @@
 
 import React, { useState } from "react";
 import {Link} from "gatsby"
+import logo from '../../static/img/logo.png'
 
 const NavBar = () => {
 
     const [isActive, toggleNavbar] = useState(false);
-    const [isDropped, dropDown ] = useState(false);
+    
     
     const toggleTrueFalse = () => toggleNavbar(!isActive);
-    const dropTrueFalse = () => dropDown(!isDropped);
+    
    
     return (
         <div style={{position: "absolute", zIndex: "1000"}} className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
             <div id="main-nav-wrap">
                 <div className="logo-wrap">
                     <a href="/">
-                        <span className="formal" >Botanical</span><span className="primary-color"> Backyard</span> </a>
+                       <img src={logo} alt="logo"/>
+
+                        
+                         </a>
                 </div>
                 <div >
                     <div className={` responsive-nav ${isActive ? 'mobile-nav' : ''}`}>
                         <ul className="nav">
 
-                            <li><Link className="hack" to="/">Home</Link></li>
-                            <li><Link to="/about/" className="hack">About</Link></li>
-                            <li><Link to="/blog/" className="hack">Blog</Link></li>
-                          
-                            <li  onClick={dropTrueFalse}><span style={{cursor: "pointer"}} className="hack drop">Butterflies<i className= {`arrow ${isDropped ? 'down' : ''}`}></i></span>
-                                <ul className= {`dropdown ${isDropped ? '' : 'hide'}`} style={{paddingInlineStart: "0px"}} >
-                                    <li><Link  to="/butterflies/monarch/" className="hack drop-link">Monarch</Link></li>
-                                    <li><Link to="/butterflies/giantswallowtail/" className="hack drop-link">Giant Swallowtail</Link></li>
-                                    <li><Link to="/butterflies/blackswallowtail/" className="hack drop-link">BlackSwallowtail</Link></li>
-                                </ul>
-                            
+                            <li><Link  className="bottom-link" to="/">HOME
+                            <span className="top-link">HOME</span>
+                            </Link>
                             </li>
-                            <li><Link to="/contact/" className="hack">Contact</Link></li>
+                            <li><Link to="/about/" className="bottom-link">ABOUT
+                            <span className="top-link">ABOUT</span>
+                            </Link></li>
+                            <li><Link to="/blog/" className="bottom-link">MY WORK
+                            <span className="top-link">MY WORK</span>
+                            </Link></li>
+                          
+                         
+                            <li><Link to="/contact/" className="bottom-link">CONTACT
+                            <span className="top-link">CONTECT</span>
+                            </Link></li>
                         </ul>
                     </div>
 

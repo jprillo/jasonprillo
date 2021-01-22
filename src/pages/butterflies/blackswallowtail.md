@@ -1,40 +1,30 @@
 ---
-heading: Black Swallowtail
-path: butterflies/monarch
-templateKey: butterfly-page
-title: Black Swallowtail
+heading: formalflamingo.com
+path: butterflies/formalflamingo
+templateKey: project-page
+featuredimage: /img/formalflamingoscreenshot.png
+title: formalflamingo.com
 image: /img/blackswallowtail.png
 description: This black beauty of the garden has shades of blue on the outside wings and yellow and orange spots on the bottom wings.
-range:
-  description: The black swallowtail can be found in most places east of the Rocky Mountains and in the SouthWest. 
-  image:
-    alt: Black Swallowtail Range Map
-    image: /img/blackswallowtailmap.png
-main:
-  heading: Great coffee with no compromises
-  description1: >
-    If you want black swallowtails in our garden you wil have a lot of plants to choose from. 
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  description2: |
-    Black swallowtails lay there eggs on thee  of the plant usually in . it takes about to hatch but has lots predators. 
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  description3: |
-    Black swallowtails are black with orange spots for the first few instars. After it matures it will be lime green and black stripes with orange spots.The brillance of the colors can vary with some final instars staying mostly black. When frightened they will put out an orange horn acompanied by a sweet small that is awful and frightens enemies and friends. 
-  image3:
-    alt: Coffee beans
-    image: /img/black-cat.jpg
-
-
-  description4:
-    Finally the caterpillar will roam usually leaving the plant and turn into a chrislis. They range from brown mimicing a leafor stem to lime green making it look like a leaf. Depending on the time of year they can take anywhere from a few weeks to transform to a 9 months if it overwinters. 
-  image4:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
-host: Parsley, Carrott, Rue, Hogweed
-lifespan: 2-3 weeks
-latinname: Papilio polyxenes
 ---
+
+The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+
+While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+
+## What the updates mean to you
+
+The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+
+* producers
+* roasters
+* importers/exporters
+* retailers
+* manufacturers
+* baristas
+
+For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+
+Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+
+The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.

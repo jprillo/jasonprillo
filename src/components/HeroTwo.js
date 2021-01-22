@@ -1,8 +1,5 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import Button from './Button.js'
 
 
 
@@ -13,27 +10,28 @@ const HeroTwo = (
 ) => {
     return (  
        
-<Jumbotron>
-    <Container className="heroContainer" >
-        <Row className=" position-relative hero row text-center">  
-            <Col >
-            <h1 className="text-center" >{props.title}<br/></h1> 
-        
+
+    <div className="heroContainer">
+        <div className = "hero-row">
+            <div className="heroImageDesktop">
        
-         <p style={{padding: "0 2em"}}>
-    {props.description}
-  </p>
+            </div>
+            <div className="heroText"> 
+             
+            <h1 >{props.title}</h1>        
+            <p>{props.description}</p>
+            <div className="button-wrap">
+                <Button color={"#2ED0E1"} border={"5px 3px #86EE2A"} to={"/contact"} label={"CONTACT"}/>
+                <Button color={"#86EE2A"} border={"5px 3px #2ED0E1"} to={"/blog"} label={"MY WORK"}/>
+            </div>
+         
+            </div> 
 
-            </Col>
-
-           
-          
-        </Row>
+        </div>
+       
         
- 
-  </Container>
+  </div>
 
-</Jumbotron>
 
     );
 }
