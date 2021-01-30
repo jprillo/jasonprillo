@@ -6,8 +6,11 @@ export default () => (
     <section className="section">
       <div className="container">
         <div className="content">
+          <div className="title">
           <h1>Thank you!</h1>
-          <p>This is a custom thank you page for form submissions</p>
+          </div>
+         
+          <p style={{textAlign: "center"}}>I will get back to as soon as possible or not at all. </p>
         </div>
       </div>
     </section>

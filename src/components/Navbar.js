@@ -29,16 +29,16 @@ const NavBar = () => {
                             <span className="top-link">HOME</span>
                             </Link>
                             </li>
-                            <li><Link to="/about/" className="bottom-link">ABOUT
+                            <li><Link to="/about" className="bottom-link">ABOUT
                             <span className="top-link">ABOUT</span>
                             </Link></li>
-                            <li><Link to="/blog/" className="bottom-link">MY WORK
-                            <span className="top-link">MY WORK</span>
+                            <li><Link to="/projects" className="bottom-link">PROJECTS
+                            <span className="top-link">PROJECTS</span>
                             </Link></li>
                           
                          
-                            <li><Link to="/contact/" className="bottom-link">CONTACT
-                            <span className="top-link">CONTECT</span>
+                            <li><Link to="/contact" className="bottom-link">CONTACT
+                            <span className="top-link">CONTACT</span>
                             </Link></li>
                         </ul>
                     </div>

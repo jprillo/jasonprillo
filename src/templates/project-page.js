@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
@@ -15,6 +16,8 @@ export const ProjectPostTemplate = ({
   tags,
   title,
   helmet,
+  design,
+  code,
 }) => {
   const ProjectContent = contentComponent || Content
 
@@ -22,24 +25,80 @@ export const ProjectPostTemplate = ({
     <section className="section blue-background">
       {helmet || ''}
     
-      <div style={{padding: "20vh 15vw"}} >
+      <div className="project" >
       
             <h1>
               {title}
             </h1>
             <div className="row linear-background" style={{padding: "8px"}}>
-                <div  style={{ width: "50%",height: "60vh", overflowY: "scroll"}} >
-                    <img width="100%" src={featuredimage.childImageSharp.fluid.src} alt="jjj"/>
+                <div  className="project-image"  >
+                 <PreviewCompatibleImage 
+                        imageInfo={{
+                          image: featuredimage.childImageSharp.fluid.src,
+                          alt: `featured image thumbnail for post ${title}`,
+                          
+                         
+                        }}
+                      />
+                 
                 </div>
-                <div style={{background: "black", width: "50%"}}>
+                <div className="project-box" >
                     <p>{description}</p>
+
+                    <div >
+                      <h3 className="secondary-color">Tools</h3>
+                      <div style={{display: "flex", justifyContent: "center"}}>
+                      <div style={{margin: " 0 2em"}}>
+                        <h4 className="primary1-color">Design</h4>
+                        {code && code.length ? (
+              <div>
+     
+                <ul>
+                  {code.map((c) => (
+                    <li >
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+                        </div>
+                        <div style={{margin: " 0 2em"}}>
+                        <h4 className="primary2-color">Code</h4>
+                        {design && design.length ? (
+              <div>
+         
+                <ul>
+                  {design.map((d) => (
+                    <li >
+                      {d}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+                        </div>
+
+
+                      </div>
+                 
+                         
+
+                    </div>
+                
+
+
+
+       
                 </div>
           
             </div>
-           
+            <div style={{whiteSpace: "pre-line"}} className="content-container">
             <ProjectContent content={content} />
+            </div>
            
-       
+          
+     
       </div>
     </section>
   )
@@ -51,6 +110,8 @@ ProjectPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  code: PropTypes.array,
+  design: PropTypes.array,
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
@@ -72,7 +133,8 @@ const ProjectPost = ({ data }) => {
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
+        code={post.frontmatter.code}    
+        design={post.frontmatter.design}
         title={post.frontmatter.title}
         featuredimage={post.frontmatter.featuredimage}
       />
@@ -105,6 +167,8 @@ export const pageQuery = graphql`
             }
           }
         tags
+        design
+        code
       }
     }
   }

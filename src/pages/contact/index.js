@@ -1,7 +1,8 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import HeroTwo from '../../components/HeroTwo'
+
+
 
 function encode(data) {
   return Object.keys(data)
@@ -37,8 +38,11 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <HeroTwo title="Contact" description="lets talk about it" />
-        <section className="section">
+          <section className="blue-background">
+         <div className="title" >
+     <h1 >Contact Me</h1>
+     </div> 
+      
           <div className="container">
             <div className="content">
               
@@ -103,7 +107,10 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="button is-link" type="submit">
+                <div>
+
+</div>
+                  <button className="form-button" type="submit">
                     Send
                   </button>
                 </div>

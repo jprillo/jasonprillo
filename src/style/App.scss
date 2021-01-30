@@ -64,17 +64,75 @@ body{
  
 }
 
-h1{
+h1,h2,h3,h4{
   
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   text-shadow: .5px .5px $primary2;
 }
+h1{
+  font-size: 22px;
+  color: $primary1;
+  text-align: center;
+  margin-bottom: .35em;
+  @include breakpoint(md){
+    font-size: 60px;    
+    text-align: left;
+    text-align: center;
+  }
+}
+h4{
+  font-size: 25px;
+ font-weight: 600;;
+  text-align: center;
+  margin-bottom: .35em;
+  color: white;
+  @include breakpoint(md){
+    font-size: 28px;    
+   
+    text-align: center;
+  }
+}
+h3{
+  font-size: 30px;
+ font-weight: 600;;
+  text-align: center;
+  margin: .35em;
+  color: white;
+  @include breakpoint(md){
+    font-size: 32px;  
+    
+  
+    text-align: center;
+  }
+}
 p{
   font-family: 'Inter', sans-serif;
 }
+p{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  @include breakpoint(md){
+    font-size: 22px;
+    text-align: left;
+  }
+  
+  
+}
 
+
+.primary1-color{
+color: $primary1
+}
+.primary2-color{
+  color: $primary2
+  }
+.secondary-color{
+  color: #FF00D6;
+}
 .row{
   display: flex;
   flex-direction: column;
@@ -106,10 +164,43 @@ justify-content: center;
   font-size: 20px;
   margin: 0 0 1.5em 0;
   border: solid 2px;
+
   
   @include breakpoint(md){
     margin: 0 1em 0 0;
   }
+}
+.button-one{
+  border-color: #2ED0E1; 
+  box-shadow:5px 3px #86EE2A;
+ 
+
+}
+.button-one:hover{
+  text-decoration: none;
+  color: $primary1;  
+  box-shadow:1px 1px $primary2;
+
+}
+.button-one:active{
+  border-color: $primary1;
+  box-shadow:none;
+
+}
+.button-two{
+  border-color: #86EE2A; 
+  box-shadow:5px 3px #2ED0E1;
+}
+.button-two:hover{
+  text-decoration: none;
+  color: $primary2;  
+  box-shadow: 2px 1px  #86EE2A;
+
+}
+.button-two:active{
+  border-color: $primary2;
+  box-shadow:none;
+
 }
 
 /***************************************HERO***************************************/
@@ -138,6 +229,20 @@ justify-content: center;
     
   }
 
+}
+.title{
+  padding-top: 20vh;
+  h1{
+    font-size: 50px;
+    @include breakpoint(md){
+      font-size: 60px;
+      
+    }
+  }
+  @include breakpoint(md){
+    padding-top: 25vh;
+    
+  }
 }
 .heroText{
  width: 100%;
@@ -346,7 +451,19 @@ margin-left: 25px;
 
   font-family: $font;
   
-  
+  &:hover {
+    color:  $primary2;
+    text-decoration: none;
+   
+  }
+  &:active {
+    color:  $primary1;
+   
+  }
+  &:hover .top-link{
+   display: none;   
+   
+  }
   font-size: 35px;
   line-height: 120%;
   margin:  40px 0;    
@@ -357,13 +474,22 @@ margin-left: 25px;
       margin: .5em;
       padding: .5em;
       
-  }
   &:hover {
-    color: yellow;
+    color:  $primary2;
+    text-decoration: none;
+   
   }
   &:active {
-    color: blue-color;
+    color:  $primary1;
+   
   }
+  &:hover .top-link{
+   display: none;   
+   
+  }
+      
+  }
+
 
 }
 .nav{
@@ -416,13 +542,8 @@ margin-left: 25px;
       margin: .5em;
       padding: .5em;
 }
-&:hover {
-  color: red-color;
- 
-}
-&:active {
-  color: blue-color;
-}
+
+
 
 }
 .nav a{
@@ -439,14 +560,16 @@ margin-left: 25px;
     text-decoration: none;
    
   }
+  &:active {
+    color:  $primary1;
+   
+  }
   &:hover .top-link{
    display: none;
    
    
   }
-  &:active {
-    color: blue-color;
-  }
+
 
 }
 
@@ -541,6 +664,7 @@ font-size: 20px;
 .work-post{
   width: 100%; 
   margin: 0; 
+  
   @include breakpoint(xs){
     width: 363px;
     margin: 0 2em; 
@@ -548,16 +672,32 @@ font-size: 20px;
     
   }
 }
+.work-image-container{
+  height: 100%;
+  overflow-y: hidden;
+}
 .work-image{
   background: linear-gradient(89.82deg, #86EE2A 0.12%, #2ED0E1 50.01%, #FF00D6 99.81%);
   padding: 8px;
+  height: 256px;
+  overflow-y: hidden;
   img{
     
     width: 100%;
     height: 240px;
- 
+    transition: display 2s;
 
   }
+}
+.work-image:hover {
+  background: linear-gradient(89.82deg, #28470D 0.12%, #0F3D43 50.01%, #4B0140 99.81%);
+ 
+  }
+.work-image:hover img{
+  display: none;
+}
+.work-image:hover .work-info{
+  display: block;
 }
 .work-link{
   margin: 1em 0 3em;
@@ -567,6 +707,13 @@ a{
   font-size: 22px;
 
 }
+}
+
+.work-info{
+  display: none;
+  color: white;
+  text-align: center;
+  
 }
 
 /*************************************************END WORK***********************************************/
@@ -582,6 +729,7 @@ a{
    background-size: cover;
    color: white;
    
+   
    font-family: $font;
    
    h2{
@@ -592,6 +740,7 @@ a{
    p{
      font-size: 22px;
      padding: 1.5em 0 3em;
+     text-align: center;
    }
 
 }
@@ -675,4 +824,144 @@ width: 100%;
 
 .container{
   padding: 0;
+}
+
+/*****************************************PROJECT PAGE********************************************/
+.project-roll{
+  width: 100%;
+}
+.project{
+  color: white;
+  padding: 10vh 5%;
+  h1{
+    margin: 1.5em 0 1em;
+  }
+  
+   @include breakpoint(md){
+    padding: 10vh 15vw;
+  }
+}
+.project-box{
+  background: black; 
+  width: 100%; 
+  color: white;
+  padding: 2em;
+  font-size: 22px; 
+  font-family: $font;
+  @include breakpoint(md){
+    width: 50%;
+  }
+  p{
+    font-weight: normal;
+  }
+
+} 
+.project-image{
+  width: 100%;
+  height: 60vh; 
+  overflow-Y: hidden;
+  @include breakpoint(md){
+    width: 50%;
+    overflow-Y: scroll;
+  }
+}
+
+
+
+
+.content-container{
+  padding: 3em 0;
+  @include breakpoint(md){
+    padding: 3em 10vw;
+  }
+  p{
+    font-weight: normal;
+    line-height: 1.5em;
+  }
+}
+
+
+
+
+/***************************************************FOOTER*****************************************/
+.footer{
+  justify-content: space-around;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+}
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(md){
+    padding-top: 1em;
+  }
+ 
+  a{
+    color: white;
+    font-family: $font;
+    padding: .5em;
+    margin: 1em;
+    &:hover{
+      color: $primary1;
+      text-decoration: none;
+    }
+  }
+  @include breakpoint(md){
+flex-direction: row;
+  }
+}
+.social{
+
+  img{
+    width: 35px;
+    @include breakpoint(md){
+      width: 50px;
+    }
+  }
+  a{
+    margin: .5em;
+    padding: .25em;
+    @include breakpoint(md){
+    margin: 1em;
+    padding: .5em
+    }
+  }
+}
+
+
+
+/****************************************FORM***************************************/
+label{
+  color: white;
+  font-family: $font;
+  margin: 1.5em 0 .2em;
+  font-size: 20px;
+}
+input, textarea {
+  background: black;
+  color: $primary1;
+  box-shadow: 2px 2px $primary1;
+  border: solid 2px $primary2;
+  font-size: 20px;
+  font-family: $font;
+  padding: .5em;
+ 
+}
+
+.form-button{
+  color: white;
+  padding: .5em 1em;
+  font-size: 20px;
+  font-family: $font;
+  background: inherit;
+  border: solid 2px $primary1;
+  box-shadow: 2px 2px $primary2;
+}
+form{
+  text-align: center;
+  @include breakpoint(md){
+    text-align: left;
+  }
+ 
 }

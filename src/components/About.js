@@ -15,7 +15,7 @@ const Work = (
     </h2>
     <p>Hello there I am a man who loves satan.</p>
 
-<Button color={"#2ED0E1"} border={"5px 3px #86EE2A"} to={"/contact"} label={"See More"}/>
+<Button class={"button button-two"} to={"/contact"} label={"See More"}/>
     </div>
   
    

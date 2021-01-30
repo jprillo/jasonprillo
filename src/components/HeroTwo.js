@@ -21,8 +21,8 @@ const HeroTwo = (
             <h1 >{props.title}</h1>        
             <p>{props.description}</p>
             <div className="button-wrap">
-                <Button color={"#2ED0E1"} border={"5px 3px #86EE2A"} to={"/contact"} label={"CONTACT"}/>
-                <Button color={"#86EE2A"} border={"5px 3px #2ED0E1"} to={"/blog"} label={"MY WORK"}/>
+                <Button class={"button button-one"} to={"/contact"} label={"CONTACT"}/>
+                <Button class={"button button-two"} to={"/blog"} label={"MY WORK"}/>
             </div>
          
             </div> 

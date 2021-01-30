@@ -8,9 +8,9 @@ const Button = (
 ) => {
     return (        
 <Link 
-    style={{borderColor: props.color, boxShadow: props.border}}
+    
     to={props.to} 
-    className="button">
+    className= {props.class}>
         {props.label}
                        
 </Link>
