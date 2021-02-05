@@ -4,7 +4,10 @@ path: projects/formalflamingo
 templateKey: project-page
 featuredimage: /img/formalflamingoscreenshot.png
 title: formalflamingo.com
-image: /img/blackswallowtail.png
+projectlink: https://formalflamingo.com
+github: https://github.com/jprillo/formalflamingo
+
+image: /img/formalflamingothumb.png
 description: Formalflamingo.com is a static web design agency website built with Gatsby.js and hosted on Netlify. 
 
 design:

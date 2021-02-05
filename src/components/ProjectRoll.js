@@ -11,33 +11,38 @@ class ProjectRoll extends React.Component {
 
     return (
       <div className="blog-roll">
+        
         {posts &&
           posts.map(({ node: post }) => (
             <div  className="work-post "  key={post.id}>
-                          <Link
-                     
-                      to={post.fields.slug}
-                    >
-        
+               
 
         
             <div className="work-image">
               <div className="work-image-container">
+                  
+              <div className="work-info">
+                <p>{post.frontmatter.description} </p>
+                <div>
+               <Link to={post.frontmatter.projectlink} alt="formalflamingo.com">FF</Link>
+                <Link to={post.frontmatter.github} alt="formalflamingo.com">Github</Link>
+                <Link to={post.fields.slug} alt="formalflamingo.com">More Info</Link> 
+               </div>
+               </div>
               <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         }}
                       />
+                      
 
               </div>
 
-         
             </div>
       
         
         
-              </Link>
               <div className="work-link" style={{textAlign: "center"}}>
                <Link to="https://formalflamingo.com" alt="formalflamingo.com">{post.frontmatter.title}</Link>
            
@@ -77,6 +82,9 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                description
+                projectlink
+                github
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {

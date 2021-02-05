@@ -697,7 +697,16 @@ font-size: 20px;
   display: none;
 }
 .work-image:hover .work-info{
-  display: block;
+  display: flex;
+  flex-direction: column;
+ 
+  div{
+    display: flex;
+    
+    justify-content: space-around;
+   
+
+  }
 }
 .work-link{
   margin: 1em 0 3em;
@@ -713,6 +722,11 @@ a{
   display: none;
   color: white;
   text-align: center;
+  padding: 2em;
+  a{
+    color: white;
+    
+  }
   
 }
 

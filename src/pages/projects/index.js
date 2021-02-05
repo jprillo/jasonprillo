@@ -12,7 +12,13 @@ export default class BlogIndexPage extends React.Component {
         <div className="title" >
      <h1 >Projects</h1>
      </div> 
-          <ProjectRoll />
+     <div className="row">
+       <div>
+         <ProjectRoll />
+         </div>
+       
+     </div>
+        
       
         </div>
      
