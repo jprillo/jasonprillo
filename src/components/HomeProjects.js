@@ -22,10 +22,10 @@ class HomeProjects extends React.Component {
               <div className="work-image-container">
                   
               <div className="work-info">
-                <p>{post.frontmatter.description} </p>
-                <div>
-               <Link to={post.frontmatter.projectlink} alt="formalflamingo.com">FF</Link>
-                <Link to={post.frontmatter.github} alt="formalflamingo.com">Github</Link>
+                <p><span className="work-title">{post.frontmatter.title} </span>{post.frontmatter.description} </p>
+                <div className="work-links">
+               <Link to={post.frontmatter.projectlink} alt="formalflamingo.com">Project Page</Link>
+                <Link to={post.frontmatter.github} alt="formalflamingo.com">Github Repo</Link>
                 <Link to={post.fields.slug} alt="formalflamingo.com">More Info</Link> 
                </div>
                </div>

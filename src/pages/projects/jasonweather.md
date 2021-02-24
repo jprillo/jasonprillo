@@ -3,9 +3,9 @@ heading: jasonweather.netlify.com
 path: projects/jasonweather
 templateKey: project-page
 featuredimage: /img/jasonweather.png
-title: Jason Weather
-image: /img/jasonweatherthumb
-description: This is the only site in the world where you can find out what the weather is like where I am.  
+title: Jason Weather 
+image: /img/jasonweatherthumb.png
+description:  is the only site in the world where you can find out what the weather is like where I am.  
 projectlink: https://jasonweather.netlify.app
 github: https://github.com/jprillo/weather-app
 
@@ -20,22 +20,17 @@ code:
 ---
 
 ### History:
+My weather.com account got stuck on Washington DC for some reason. I would change it and on my next login "Looks like it is going to be super cold tonight." "No, it is telling me the weather in Washington DC.... again."
 
-formalflamingo.com was one of the first domains I purchased when I began learning web development. It may be too long, weird, and came from a name generator of some kind but, it holds a place in my heart. There have been several generations of it. I will start with this particular project and show you its evolution at the end. 
-
-Once I learn enough to code my own static HTML sites I started trying to make this website in 2017. There were a lot of versions that were never launched that look horrible but here are some of the ones I could find and have the code for. 
-
-You have to start somewhere. I am writing this well after the fact and I cringe looking at the final product and it has only been a couple of years.  "Jason you are not still the guy who used all those weird css classes." 
-I just needed to tell myself that. 
+I made this project because I wanted to find an API to use in a useful way and I wanted to know the weather.
 
 ### Goals:
-My goals were to take this website off a subscription shared hosting service and put it on something free. I also wanted to be able to push changes and use React which I had just started working at the time. I am redesigning and moving from static html pages so this is going to be a complete overhaul.
+I wanted to use a weather API to find the weather where I am. I do not want to waste any time setting it up so you can find out what the weather is like where you are. I do not care what the weather is like where you are. 
 
 ### Solutions:
-Gastby.js: I chose gatsby on sitting inside on a mall on black friday waiting for my wife to get through the line in a candle store. I had already read about static site generators and Netlify and read the documentation while walking in the mall. I wonder if that is what the other people sitting around me were doing on thier phones too. It would have been good to have collaborated. 
+I used the OPENWEATHERMAP API's all in one call to get all the options I wanted. I used latitude longitude for the most accurate results.  The background and icons render conditionally based on the weather results. If you try to find a way to get your weather you will only find insults.  
 
 ### Roadblocks:
-learning gatsby had a few hickups like anything else but it is straight forward and well documented. Gatsby images is powerful but also kind of a pain in the ass so beware. I never got it right in the blog of this project. 
-learning Github and Netlify. 
-
-
+I didn't immediately think about API key security when I thought of this vane weather project. I used LAMBDA to do the secret stuff so it doesn't show up in my repository or frontend. 
+This was my first attempt at using a JSON API to populate my frontend. 
+I have to push changes if I go somewhere. I could probably find a way for it to track me but I am not trying to make it that easy for any potential assassination attempts.

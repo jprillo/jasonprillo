@@ -3,12 +3,12 @@ heading: formalflamingo.com
 path: projects/formalflamingo
 templateKey: project-page
 featuredimage: /img/formalflamingoscreenshot.png
-title: formalflamingo.com
+title: Formal Flamingo
 projectlink: https://formalflamingo.com
 github: https://github.com/jprillo/formalflamingo
 
 image: /img/formalflamingothumb.png
-description: Formalflamingo.com is a static web design agency website built with Gatsby.js and hosted on Netlify. 
+description:  is a static web design agency website built with Gatsby.js and hosted on Netlify. 
 
 design:
   - GIMP
@@ -36,7 +36,5 @@ My goals were to take this website off a subscription shared hosting service and
 Gastby.js: I chose gatsby on sitting inside on a mall on black friday waiting for my wife to get through the line in a candle store. I had already read about static site generators and Netlify and read the documentation while walking in the mall. I wonder if that is what the other people sitting around me were doing on thier phones too. It would have been good to have collaborated. 
 
 ### Roadblocks:
-learning gatsby had a few hickups like anything else but it is straight forward and well documented. Gatsby images is powerful but also kind of a pain in the ass so beware. I never got it right in the blog of this project. 
-learning Github and Netlify. 
-
-
+Learning gatsby contained a few hickups like anything else but it is straight forward and well documented. Gatsby images is powerful but also kind of a pain in the ass so beware. I never got it right in the blog of this project. 
+This is also the first project I used a Github workflow and Netlify for hosting. 

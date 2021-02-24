@@ -2,8 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
+
 import { Helmet } from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 
 import Content, { HTMLContent } from '../components/Content'
@@ -18,6 +19,9 @@ export const ProjectPostTemplate = ({
   helmet,
   design,
   code,
+  projectlink,
+  github,
+  slug
 }) => {
   const ProjectContent = contentComponent || Content
 
@@ -42,8 +46,8 @@ export const ProjectPostTemplate = ({
                       />
                  
                 </div>
-                <div className="project-box" >
-                    <p>{description}</p>
+                <div style={{position: "relative"}} className="project-box" >
+                    <p><span className="work-title">{title}</span> {description}</p>
 
                     <div >
                       <h3 className="secondary-color">Tools</h3>
@@ -86,7 +90,11 @@ export const ProjectPostTemplate = ({
 
                     </div>
                 
-
+                    <div className="work-links">
+               <Link to={projectlink} alt="formalflamingo.com">Project Home</Link>
+                <Link to={github} alt="formalflamingo.com">Github Repo</Link>
+                <Link to={slug} alt="formalflamingo.com">More Info</Link> 
+               </div>
 
 
        
@@ -95,8 +103,9 @@ export const ProjectPostTemplate = ({
             </div>
             <div style={{whiteSpace: "pre-line"}} className="content-container">
             <ProjectContent content={content} />
+            <Link className="projects-link" to ="/projects" alt="projects">View all Projects</Link>
             </div>
-           
+          
           
      
       </div>
@@ -108,6 +117,9 @@ ProjectPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
+  projectlink: PropTypes.string,
+  github: PropTypes.string,
+  slug: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
   code: PropTypes.array,
@@ -137,6 +149,9 @@ const ProjectPost = ({ data }) => {
         design={post.frontmatter.design}
         title={post.frontmatter.title}
         featuredimage={post.frontmatter.featuredimage}
+        projectlink={post.frontmatter.projectlink}
+        github={post.frontmatter.github}
+        slug={post.fields.slug}
       />
     </Layout>
   )
@@ -155,10 +170,15 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        projectlink
+        github        
         featuredimage {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {

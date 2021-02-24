@@ -5,7 +5,7 @@ templateKey: project-page
 featuredimage: /img/acnh-directory-screencapture.png
 title: ACNH Directory
 image: /img/acnh-directory-thumb.png
-description: This is a directory I made for easily searching villagers by combining attributes.  
+description:  is a website I made for easily searching Animal Crossing villagers by combining and filtering attributes.  
 projectlink: https://acnh-directory.netlify.app
 github: https://github.com/jprillo/acnh-directory
 
@@ -18,24 +18,16 @@ code:
   - CSS 
 
 ---
-
 ### History:
 
-formalflamingo.com was one of the first domains I purchased when I began learning web development. It may be too long, weird, and came from a name generator of some kind but, it holds a place in my heart. There have been several generations of it. I will start with this particular project and show you its evolution at the end. 
-
-Once I learn enough to code my own static HTML sites I started trying to make this website in 2017. There were a lot of versions that were never launched that look horrible but here are some of the ones I could find and have the code for. 
-
-You have to start somewhere. I am writing this well after the fact and I cringe looking at the final product and it has only been a couple of years.  "Jason you are not still the guy who used all those weird css classes." 
-I just needed to tell myself that. 
+I made this project when I got a Nintendo Switch and starting playing Animal Crossing New Horizons. My wife was playing contests online where people would offer treasure hunts and presents on their island to the first person to answer a question about a villager or some other aspect of the game. She would ask me and I would help her guess and we would lose.
 
 ### Goals:
-My goals were to take this website off a subscription shared hosting service and put it on something free. I also wanted to be able to push changes and use React which I had just started working at the time. I am redesigning and moving from static html pages so this is going to be a complete overhaul.
+My goals were to make an app that would allow me to filter the villagers in a way that would give me the answer super fast so my wife can win. In addition, I wanted to add a way to figure out what items were new every month and where we could find them. 
 
 ### Solutions:
-Gastby.js: I chose gatsby on sitting inside on a mall on black friday waiting for my wife to get through the line in a candle store. I had already read about static site generators and Netlify and read the documentation while walking in the mall. I wonder if that is what the other people sitting around me were doing on thier phones too. It would have been good to have collaborated. 
+I found an API that gave me the information I was looking for. I built a gatsby app that makes calls to it and handles the filtering. I celebrated in the glorious victories until my island got full and now I mostly play Smash Bros. 
 
 ### Roadblocks:
-learning gatsby had a few hickups like anything else but it is straight forward and well documented. Gatsby images is powerful but also kind of a pain in the ass so beware. I never got it right in the blog of this project. 
-learning Github and Netlify. 
-
-
+A villagers star sign is something that we needed but was not included in the API. I derived it with a snippet I found and applied it to my situation. 
+During testing, I found that the larger item lists were loading slow and had a lot of mistakes. Since I built this on Gatsby I decided to copy the JSON and Images for the villagers and leverage the extra speed I get from not having to pull it from the API. 

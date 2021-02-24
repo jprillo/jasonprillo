@@ -22,7 +22,7 @@ const HeroTwo = (
             <p>{props.description}</p>
             <div className="button-wrap">
                 <Button class={"button button-one"} to={"/contact"} label={"CONTACT"}/>
-                <Button class={"button button-two"} to={"/blog"} label={"MY WORK"}/>
+                <Button class={"button button-two"} to={"/projects"} label={"MY WORK"}/>
             </div>
          
             </div> 

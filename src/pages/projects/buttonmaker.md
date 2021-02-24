@@ -3,14 +3,13 @@ heading: buttonmaker.netlify.com
 path: projects/buttonmaker
 templateKey: project-page
 featuredimage: /img/buttonmaker-screencapture.png
-title: buttonmaker.com
+title: Buttonmaker
 image: /img/buttonmaker-screencapture-thumb.png
-description: This is used to design buttons if you were to not know css somehow.  
+description:  is used to design buttons if you were to not know css somehow.  
 projectlink: https://formalflamingo.com
 github: https://github.com/jprillo/button-maker
 
 design:
-
   - Figma  
 code: 
   - Vanilla Javascript 
@@ -20,22 +19,18 @@ code:
 ---
 
 ### History:
-
-formalflamingo.com was one of the first domains I purchased when I began learning web development. It may be too long, weird, and came from a name generator of some kind but, it holds a place in my heart. There have been several generations of it. I will start with this particular project and show you its evolution at the end. 
-
-Once I learn enough to code my own static HTML sites I started trying to make this website in 2017. There were a lot of versions that were never launched that look horrible but here are some of the ones I could find and have the code for. 
-
-You have to start somewhere. I am writing this well after the fact and I cringe looking at the final product and it has only been a couple of years.  "Jason you are not still the guy who used all those weird css classes." 
-I just needed to tell myself that. 
+After I made my first personal website I realized that I need something in it. I had not been the most consistent blogger so my idea was to make something that people could use that would link back to my site. I choose I button designer because why not.  
 
 ### Goals:
-My goals were to take this website off a subscription shared hosting service and put it on something free. I also wanted to be able to push changes and use React which I had just started working at the time. I am redesigning and moving from static html pages so this is going to be a complete overhaul.
+I wanted to be able to change all of the styles one would change to design a button and spit out the CSS so one could paste into thier code. I thought at the time that learned javascript styling would be a waste of time but it is easy and proved to be supoer useful when I moved to React. 
 
 ### Solutions:
-Gastby.js: I chose gatsby on sitting inside on a mall on black friday waiting for my wife to get through the line in a candle store. I had already read about static site generators and Netlify and read the documentation while walking in the mall. I wonder if that is what the other people sitting around me were doing on thier phones too. It would have been good to have collaborated. 
+For a long time this is the only page I got to rank well enough on Google to get regular traffic.
+At the time of writing this I am getting abround 400 impressions and 8 clicks a week. It makes me sad that I am taking it off of the domain it is on but when I made my original portfolio I just stacked all my projects in the same directory. Everything. In one directory. Not a proud moment.
 
 ### Roadblocks:
-learning gatsby had a few hickups like anything else but it is straight forward and well documented. Gatsby images is powerful but also kind of a pain in the ass so beware. I never got it right in the blog of this project. 
-learning Github and Netlify. 
+Picking out colors I used the jscolor library to make it a little more user friendly then what I could do otherwise. 
+When I added this project to github I decided to add font selection as a feature. I noticed that I used some strange naming conventions in my early development that I should have probably cleaned up. Instead I just named my new function something equally insane and jammed it in there. 
+
 
 

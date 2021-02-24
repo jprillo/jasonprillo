@@ -10,7 +10,7 @@ class ProjectRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="blog-roll">
+      <div className="blog-roll project-roll">
         
         {posts &&
           posts.map(({ node: post }) => (
@@ -22,16 +22,16 @@ class ProjectRoll extends React.Component {
               <div className="work-image-container">
                   
               <div className="work-info">
-                <p>{post.frontmatter.description} </p>
-                <div>
-               <Link to={post.frontmatter.projectlink} alt="formalflamingo.com">FF</Link>
-                <Link to={post.frontmatter.github} alt="formalflamingo.com">Github</Link>
+                <p><span className="work-title">{post.frontmatter.title} </span>{post.frontmatter.description} </p>
+                <div className="work-links">
+               <Link to={post.frontmatter.projectlink} alt="formalflamingo.com">Project Home</Link>
+                <Link to={post.frontmatter.github} alt="formalflamingo.com">Github Repo</Link>
                 <Link to={post.fields.slug} alt="formalflamingo.com">More Info</Link> 
                </div>
                </div>
               <PreviewCompatibleImage
                         imageInfo={{
-                          image: post.frontmatter.featuredimage,
+                          image: post.frontmatter.image,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         }}
                       />
@@ -85,7 +85,7 @@ export default () => (
                 description
                 projectlink
                 github
-                featuredimage {
+                image {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
                       ...GatsbyImageSharpFluid
