@@ -12,7 +12,7 @@ const NavBar = () => {
     
    
     return (
-        <div style={{position: "absolute", zIndex: "1000"}} className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
+        <div style={{position: "absolute", zIndex: "1000", width:"100%"}} className={` navagation-wrap  ${isActive ? 'mobile-wrap' : ''}`}>
             <div id="main-nav-wrap">
                 <div className="logo-wrap">
                     <a href="/">
