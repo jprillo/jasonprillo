@@ -29,14 +29,15 @@ class HomeProjects extends React.Component {
                 <Link to={post.fields.slug} alt="formalflamingo.com">More Info</Link> 
                </div>
                </div>
+               <div className="work-im">
               <PreviewCompatibleImage
                         imageInfo={{
-                          image: post.frontmatter.image,
+                          image: post.frontmatter.image,                          
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         }}
                       />
                       
-
+                      </div>
               </div>
 
             </div>

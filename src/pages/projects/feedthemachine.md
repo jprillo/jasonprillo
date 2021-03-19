@@ -6,8 +6,8 @@ featuredimage: /img/bert-screenshot.png
 title: Feed the Machine
 image: /img/bert-thumb.png
 description:  is a simulation that recreates what it is like to feed an overweight comedian endless doughtnuts. 
-projectlink: https://feedthemachine.netlify.com
-github: https://github.com/jprillo/button-maker
+projectlink: https://feed-the-machine.netlify.com
+github: https://github.com/jprillo/feed-the-machine
 
 design:
   - Figma  

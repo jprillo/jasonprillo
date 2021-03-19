@@ -16,6 +16,26 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
      </div> 
      <div className="content-container">
      <PageContent className="content" content={content} /> 
+     <ul className="about-list">
+       <li>
+       I am a web developer from Palm Bay, Florida. 
+       </li>
+       <li>
+       I specialize in making Jamstack web applications with Gatsby and React.
+       </li>
+       <li>Right now, I am learning the backend so I can build full-stack MERN applications.</li>
+     <li>I was a middle school special education teacher for 10 years.</li>
+     <li>My web development business is named Formal Flamingo.</li>
+     <li>I also make graphic-designed logos, portraits, animations, and pictures of my father-in-law.</li>
+    <li>I sell art. Want Some?</li>
+    <li>I sell Christmas Earrings. Want Some? </li>
+    <li>I raise and release moths and butterflies I find in my garden. Check it out.</li>
+    <li>I do not eat onions.</li>
+    <li>50% of my liked songs on Spotify are by Young Dolph. </li>
+    <li>I have 6 cats. Siruis Black, Hufflepuffy, Snape, Luna, Bellatrix, and Baby. </li>
+    <li>I like Harry Potter. </li>
+    <li>I love Tom Brady. </li>
+     </ul>
      </div>
           
       </div>

@@ -6,7 +6,7 @@ featuredimage: /img/buttonmaker-screencapture.png
 title: Buttonmaker
 image: /img/buttonmaker-screencapture-thumb.png
 description:  is used to design buttons if you were to not know css somehow.  
-projectlink: https://formalflamingo.com
+projectlink: https://button-maker.netlify.app/
 github: https://github.com/jprillo/button-maker
 
 design:

@@ -24,9 +24,9 @@ class ProjectRoll extends React.Component {
               <div className="work-info">
                 <p><span className="work-title">{post.frontmatter.title} </span>{post.frontmatter.description} </p>
                 <div className="work-links">
-               <Link to={post.frontmatter.projectlink} alt="formalflamingo.com">Project Home</Link>
-                <Link to={post.frontmatter.github} alt="formalflamingo.com">Github Repo</Link>
-                <Link to={post.fields.slug} alt="formalflamingo.com">More Info</Link> 
+               <Link to={post.frontmatter.projectlink} alt={post.frontmatter.projectlink}>Project Home</Link>
+                <Link to={post.frontmatter.github} alt={post.frontmatter.github}>Github Repo</Link>
+                <Link to={post.fields.slug} alt={post.fields.slug}>More Info</Link> 
                </div>
                </div>
               <PreviewCompatibleImage
@@ -44,7 +44,7 @@ class ProjectRoll extends React.Component {
         
         
               <div className="work-link" style={{textAlign: "center"}}>
-               <Link to="https://formalflamingo.com" alt="formalflamingo.com">{post.frontmatter.title}</Link>
+               <Link to={post.frontmatter.projectlink}  alt={post.frontmatter.projectlink} >{post.frontmatter.title}</Link>
            
             </div>
             </div>
