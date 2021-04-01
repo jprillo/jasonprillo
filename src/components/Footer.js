@@ -29,7 +29,7 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link  to="/projects">
+                      <Link  to="/contact">
                         CONTACT
                       </Link>
                     </li>

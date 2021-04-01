@@ -4,6 +4,7 @@
 a{
   text-decoration: none;
 }
+
 *, *:before, *:after{
   box-sizing: border-box;
 }
@@ -69,7 +70,7 @@ body{
 h1,h2,h3,h4{
   
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: $font;
   font-weight: 800;
   text-shadow: .5px .5px $primary2;
 }
@@ -109,12 +110,11 @@ h3{
     text-align: center;
   }
 }
-p{
-  font-family: 'Inter', sans-serif;
-}
+
 p{
   text-align: center;
   font-size: 20px;
+  font-family: $font;
   font-weight: 200;
   color: white;
   @include breakpoint(md){
@@ -290,7 +290,8 @@ justify-content: center;
 p{
   text-align: center;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: 100;
+  line-height: 1.2em;
   @include breakpoint(md){
     font-size: 30px;
     text-align: left;
@@ -300,7 +301,7 @@ p{
 }
  @include breakpoint(md){
   width: 50%;
-  margin-top: 40vh;
+  margin-top: 35vh;
 }
 }
 .heroImageDesktop{
@@ -819,6 +820,7 @@ a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   
 }
 .linear-background{
@@ -1009,10 +1011,14 @@ flex-direction: row;
   color: white;
   font-family: $font;
   
-  width: 60%;
+
+  width: 100%;
   list-style: circle;
-  margin: 1em auto;
+padding: 10%;
   font-size: 22px;
+  @include breakpoint(md){
+    padding: 10% 0 10% 30%;
+  }
   li{
     margin: 1em 0;
   }

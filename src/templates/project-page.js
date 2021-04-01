@@ -91,9 +91,9 @@ export const ProjectPostTemplate = ({
                     </div>
                 
                     <div className="work-links">
-               <Link to={projectlink} alt="formalflamingo.com">Project Home</Link>
-                <Link to={github} alt="formalflamingo.com">Github Repo</Link>
-                <Link to={slug} alt="formalflamingo.com">More Info</Link> 
+               <Link to={projectlink} alt={projectlink}>Project Home</Link>
+                <Link to={github} alt={github}>Github Repo</Link>
+               
                </div>
 
 

@@ -3,7 +3,7 @@ templateKey: index-page
 title: Hello There
 image: /img/paintpour.jpg
 heading: Hello There
-subheading: My name is Jason. I am a web developer from Palm Bay, Florida.
+subheading: My name is Jason Prillo, I make and design things for the web. Lets make something together. 
 mainpitch:
   title: Butterfly Garden
   description: >

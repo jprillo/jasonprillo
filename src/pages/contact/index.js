@@ -38,12 +38,13 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-          <section className="blue-background">
+          <section  className="blue-background">
          <div className="title" >
      <h1 >Contact Me</h1>
      </div> 
+     <div className="row">
       
-          <div className="row form-container ">
+          <div className="row form-container responsive-half">
           
               
               <form
@@ -119,6 +120,9 @@ export default class Index extends React.Component {
                 </div>
               </form>
         
+          
+          </div>
+
           
           </div>
         </section>
