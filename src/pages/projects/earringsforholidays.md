@@ -6,7 +6,7 @@ featuredimage: /img/earringsforholidays-screencapture.png
 title: Earrings for Holidays
 image: /img/earringsforholidays-thumb.png
 description:  is a site a made to display earrings I sell with my wife for Christmas.  
-projectlink: https://earringsforholidays.square.store
+projectlink: https://earringsforholidays.square.site
 github: https://github.com/jprillo/earringsforjason
 
 design:
