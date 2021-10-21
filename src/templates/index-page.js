@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 
 import HeroTwo from '../components/HeroTwo'
 import Work from '../components/Work'
-
+import Helmet from 'react-helmet'
 
 
 export const IndexPageTemplate = ({
@@ -18,6 +18,9 @@ export const IndexPageTemplate = ({
 
 }) => (
   <div>
+    <Helmet>
+<meta name="google-site-verification" content="nZCA-yOSGGihwTtxRA8ieMOnxrd3TdbrQ4HPQmWn3z0" />
+</Helmet>
       <HeroTwo description={subheading}  image={image.childImageSharp.fluid.src} alt="hi" title={title}></HeroTwo>
       <Work/>
   
